@@ -1,0 +1,2734 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#"
+     xml:base="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ProgrammingLanguage="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAccessSpecifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAccessSpecifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:comment>It refers to what access specifiers a class has.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAlgorithm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isAlgorithmOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:comment>Containers can have their own algorithms.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasBreak -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasBreak">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasKeyword"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasContinue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasContinue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasKeyword"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:comment>C++/Users can create variables, functions, comments and so on.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasDerived -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasDerived">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isInheritedFrom"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:comment>A base class can derive its child classes.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasExceptionTypeName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasExceptionTypeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTypeName"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isExceptionTypeNameOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ExceptionTypeName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasFunctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasFunctor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isFunctorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIdentifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIdentifierOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Identifier"/>
+        <rdfs:comment>Every variable must have an identifier.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIterator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIterator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIteratorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Iterator"/>
+        <rdfs:comment>Every container has its unique iteator.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasKeyword">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasNumberOfParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasNumberOfParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasParameter"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasOperator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasOperator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasParameterType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasParameterType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasParameter"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasPointer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasPointer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isPointerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:comment>A variable/function can have one/several pointers.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasReference -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasReference">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReferenceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Reference"/>
+        <rdfs:comment>A variable may have one/several references.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasReturnTypeName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasReturnTypeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTypeName"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReturnTypeNameOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ReturnTypeName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasStorageTypeName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasStorageTypeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTypeName"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isStorageTypeNameOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#StorageTypeName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTemplate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTemplate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTemplateOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTypeName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTypeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:comment>What variables are included in the loop/control statement?</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariableTypeName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariableTypeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTypeName"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isVariableTypeNameOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isAdaptedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isAdaptedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:comment>A container can be adapted from another container.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isAlgorithmOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isAlgorithmOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isExceptionTypeNameOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isExceptionTypeNameOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTypeNameOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ExceptionTypeName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isFunctorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isFunctorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIdentifierOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIdentifierOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:comment>It refers to what variable this identifier belongs to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+        <rdfs:comment>This refers to the what header files these variables/functions/classes are included.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isInheritedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isInheritedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:comment>A child class is inherited from father classes.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIteratorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIteratorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOperatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOperatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOperatingOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOperatingOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>It means the variables that the operator is operating on.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOverloadedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOverloadedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:comment>A function can be overloaded from another function.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isPointerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isPointerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReferenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReferenceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReturnTypeNameOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReturnTypeNameOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTypeNameOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ReturnTypeName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isStorageTypeNameOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isStorageTypeNameOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTypeNameOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#StorageTypeName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTemplateOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTemplateOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:comment>It refers to what these templates belong to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTypeNameOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTypeNameOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>This refers to what these type names belong to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Keyword"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ConditionalControl"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl"/>
+        <rdfs:comment>This refers to where the keywords are used.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isVariableTypeNameOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isVariableTypeNameOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTypeNameOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>This represents the number of elements that a container can currently hold.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasEndl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasEndl">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This denotes that if there is &quot;endl&quot; symbol at the cout statement. &quot;endl&quot; stands for &quot;end of line&quot;.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasMaxSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasMaxSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>This represents the maximum number of elements that a container can hold.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasNumberOfOperand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasNumberOfOperand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>The number of operand that the operator requires.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasNumberOfParameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasNumberOfParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasPriorityLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasPriorityLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>Priority Level values denotes the order of operations. The smaller the number, the earlier the operation is performed.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isConstant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isConstant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isEmpty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isEmpty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isGlobal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isGlobal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isLocal"/>
+        <rdfs:comment>This means the variable/function can be used all over the cpp file.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isLocal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isLocal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This means the variable/function can be used only in a specific scope.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isNullptr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isNullptr">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isRecursive -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isRecursive">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>A recursive function can call itself recursively.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AccessSpecifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AccessSpecifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Attribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Method"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>C++ access specifiers are used for determining or setting the boundary for the availability of class members (data members and member functions) beyond that class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#STL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasFunctor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Functor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Algorithms act on containers and provide means for various operations for the contents of the containers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ArithmeticOperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ArithmeticOperator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+        <rdfs:comment>Arithmetic operators are used to perform common mathematical operations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Array -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Array">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AssociativeContainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AssociativeContainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAccessSpecifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AccessSpecifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Method"/>
+        <rdfs:comment>Also called member variables.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Built-InVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Built-InVariable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIdentifier"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Identifier"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariableTypeName"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedVariable"/>
+        <rdfs:comment>We can directly use bulit-in variables without defining.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Catch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Catch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+        <rdfs:comment>The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cout"/>
+        <rdfs:comment>Cin is used to get user input.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OOP"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasDerived"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isInheritedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTemplate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ClassTemplate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A class is a user-defined data type.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ClassTemplate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ClassTemplate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTemplateOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#FunctionTemplate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Comment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Comment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Comments can be used to explain C++ code, and to make it more readable.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ComparisionOperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ComparisionOperator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+        <rdfs:comment>Comparison operators are used to compare two values.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ConditionalControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ConditionalControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasKeyword"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Keyword"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasOperator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariable"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>C++ supports the usual logical conditions from mathematics, we can use these conditions to perform different actions for different decisions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Constructor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Constructor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOverloadedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Constructor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A constructor in C++ is a special method that is automatically called when an object of a class is created.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#STL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAlgorithm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIterator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Iterator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasStorageTypeName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#StorageTypeName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isAdaptedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The containers are objects that store data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput"/>
+        <rdfs:comment>Cout is used to output values/print text.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:comment>Basically, all the variables, functions, classes and other elements are created by either C++(i.e. built-in) or users.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryFunction"/>
+        <rdfs:comment>Users can define their own functions to finish specific tasks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedHeaderFile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedHeaderFile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryHeaderFile"/>
+        <rdfs:comment>We can also write some declarations on our own header files and include them.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedVariable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIdentifier"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Identifier"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariableTypeName"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#User"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+        <rdfs:comment>We can define our own variables types to finish specific tasks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Deque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Deque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Destructor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Destructor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Method"/>
+        <rdfs:comment>Destructor is a special method to destruct or delete an object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasExceptionTypeName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ExceptionTypeName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>When an error occurs, C++ will normally stop and generate an error message.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ExceptionTypeName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ExceptionTypeName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#TypeName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isExceptionTypeNameOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The names of exception types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#File -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#File">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryHeaderFile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>C++ contains a series of opearions working on files.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ForLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ForLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#WhileLoop"/>
+        <rdfs:comment>We usually use for loop when we know exactly how many times we want to loop through a block of code.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ForwardList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ForwardList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Fstream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Fstream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#File"/>
+        <rdfs:comment>A combination of ofstream and ifstream: creates, reads, and writes to files.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasPointer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOverloadedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasTemplate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#FunctionTemplate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A function is a block of code which only runs when it is called.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#FunctionTemplate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#FunctionTemplate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isTemplateOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Functor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Functor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#STL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isFunctorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The STL includes classes that overload the function call operator. Instances of such classes are called functors.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#GlobalAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#GlobalAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Algorithm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MemberAlgorithm"/>
+        <rdfs:comment>Global algorithms are the algorithms that can act on more than one containers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The names of program elements such as variables, functions, classes, and so on must be declared before they can be used. To minimize the potential for errors, C++ has adopted the convention of using header files to contain declarations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Identifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIdentifierOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>All C++ variables must be identified with unique names. These unique names are called identifiers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#If-ElseStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#If-ElseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ConditionalControl"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SwitchStatement"/>
+        <rdfs:comment>Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ifstream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ifstream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#File"/>
+        <rdfs:comment>Creates and writes to files.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OOP"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAccessSpecifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AccessSpecifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>We can inherit attributes and methods from one class to another.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryHeaderFile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>C++ has a library working on input and output.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Iterator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Iterator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#STL"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIteratorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Iterators are used for working upon a sequence of values. They are the major feature that allow generality in STL.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ConditionalControl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#InputOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is a list of reserved keywords in C++. Since they are used by the language, these keywords are not available for re-definition or overloading.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+        <rdfs:comment>Library functions are the functions that can be directly called without defining.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryHeaderFile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryHeaderFile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+        <rdfs:comment>Library header files are bulit-in header files to contain some usual declarations. We can directly include these header files without definition.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#List -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#List">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LogicalOperator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LogicalOperator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+        <rdfs:comment>Logical operators are used to determine the logic between variables or values.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasKeyword"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Keyword"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasOperator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasVariable"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Loops can execute a block of code as long as a specified condition is reached.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Map -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Map">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AssociativeContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MemberAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MemberAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Algorithm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isAlgorithmOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Member algorithms are the algorithms that only act on a specific container.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasAccessSpecifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AccessSpecifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Also called member functions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multimap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multimap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AssociativeContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MultipleInheritance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MultipleInheritance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SingleInheritance"/>
+        <rdfs:comment>A class can also be derived from more than one base class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multiset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multiset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AssociativeContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#NameSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#NameSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:comment>Namespaces provide a method for preventing name conflicts in large projects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OOP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OOP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIncluded"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>OOP stands for Object-Oriented Programming.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OOP"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasPointer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasReference"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Reference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An object is an instance of a class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ofstream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ofstream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#File"/>
+        <rdfs:comment>Reads from files.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOperatingOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Operators are used to perform operations on variables and values.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OrdinaryMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OrdinaryMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Method"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOverloadedFrom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OrdinaryMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isPointerOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isPointerOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isPointerOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pointer is a variable that stores the memory address as its value.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Reference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Reference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReferenceOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReferenceOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A reference variable is an alias to an existing variable.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ReturnTypeName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ReturnTypeName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#TypeName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isReturnTypeNameOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The names of return types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#STL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#STL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:comment>The Standard Template Library (STL) is a set of C++ template classes to provide common programming data structures and functions such as vector, lists, stacks, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Set -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Set">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AssociativeContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SingleInheritance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SingleInheritance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance"/>
+        <rdfs:comment>A class is derived from only one base class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#StorageTypeName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#StorageTypeName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#TypeName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isStorageTypeNameOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The storage type names indicate how the data is storaged.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SwitchStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SwitchStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ConditionalControl"/>
+        <rdfs:comment>We can use the switch statement to select one of many code blocks to be executed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Template">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:comment>Class/Function templates are special classes/functions that can operate with generic types</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Throw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Throw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+        <rdfs:comment>The throw keyword throws an exception when a problem is detected, which lets us create a custom error.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Try -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Try">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Exception"/>
+        <rdfs:comment>The try statement allows you to define a block of code to be tested for errors while it is being executed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#TypeName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#TypeName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:comment>The names of all kind of types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedContainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedContainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultimap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultimap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultiset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultiset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Comment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#TypeName"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isVariableTypeNameOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The names of variable types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasPointer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasReference"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Reference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isCreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isIncludedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#isOperatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Operators"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Variables are containers for storing data values.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Vector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Vector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#WhileLoop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#WhileLoop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LoopControl"/>
+        <rdfs:comment>The while loop loops through a block of code as long as a specified condition is true.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Creator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Comment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#HeaderFile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasCreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#C++ProgrammingLanguage">
+        <rdfs:comment>C++ is a cross-platform language that can be used to create high-performance applications. It was developed by Bjarne Stroustrup, as an extension to the C language.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Clock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Clock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedVariable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Stone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Stone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedVariable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#_size -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#_size">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#binarySearch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#binarySearch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedFunction"/>
+        <hasNumberOfParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasNumberOfParameter>
+        <isGlobal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isGlobal>
+        <isRecursive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRecursive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#continue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#continue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#double -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#double">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ReturnTypeName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#find -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#find">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#GlobalAlgorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#float -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#float">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Built-InVariable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#getLength -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#getLength">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OrdinaryMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Built-InVariable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#iostream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#iostream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryHeaderFile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#logic_error -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#logic_error">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ExceptionTypeName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#max -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#max">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryFunction"/>
+        <hasNumberOfParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasNumberOfParameter>
+        <isRecursive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRecursive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#min -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#min">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LibraryFunction"/>
+        <hasNumberOfParameter rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasNumberOfParameter>
+        <isRecursive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRecursive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myList -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myList">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedHeaderFile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#public -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#public">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AccessSpecifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#push_back -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#push_back">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MemberAlgorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#quickSort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#quickSort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#DefinedFunction"/>
+        <isGlobal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isGlobal>
+        <isLocal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLocal>
+        <isRecursive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isRecursive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#sequential -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#sequential">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#StorageTypeName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#setLength -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#setLength">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OrdinaryMethod"/>
+        <isRecursive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRecursive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#size -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#size">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MemberAlgorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#sort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#sort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#GlobalAlgorithm"/>
+        <isRecursive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isRecursive>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#std -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#std">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#NameSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LogicalOperator"/>
+        <hasNumberOfOperand rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasNumberOfOperand>
+        <hasPriorityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasPriorityLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#!= -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#!=">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ComparisionOperator"/>
+        <hasNumberOfOperand rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasNumberOfOperand>
+        <hasPriorityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</hasPriorityLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#&amp;&amp; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#&amp;&amp;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LogicalOperator"/>
+        <hasNumberOfOperand rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasNumberOfOperand>
+        <hasPriorityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</hasPriorityLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#* -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#*">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ArithmeticOperator"/>
+        <hasNumberOfOperand rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasNumberOfOperand>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#+ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#+">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ArithmeticOperator"/>
+        <hasNumberOfOperand rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasNumberOfOperand>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#//do_something -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#//do_something">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Comment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#== -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#==">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ComparisionOperator"/>
+        <hasNumberOfOperand rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</hasNumberOfOperand>
+        <hasPriorityLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</hasPriorityLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#catch(exception&amp;_e) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#catch(exception&amp;_e)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Catch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#cin))myNum; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#cin))myNum;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#class_MyChildClass:_public_MyClass,_public_otherClass(); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#class_MyChildClass:_public_MyClass,_public_otherClass();">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#MultipleInheritance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#class_derivedClass:public_baseClass(); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#class_derivedClass:public_baseClass();">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SingleInheritance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#cout((&apos;hello_world&apos;; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#cout((&apos;hello_world&apos;;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Cout"/>
+        <hasEndl rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasEndl>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#deque(int)_d; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#deque(int)_d;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Deque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#for(int_i=0;i_lessThan_10;i++) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#for(int_i=0;i_lessThan_10;i++)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ForLoop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#forward_list(int)_fl; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#forward_list(int)_fl;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ForwardList"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#fstream_MyReadFile(&apos;filename.txt&apos;); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#fstream_MyReadFile(&apos;filename.txt&apos;);">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Fstream"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#if(a==0)_else -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#if(a==0)_else">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#If-ElseStatement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ifstream_MyReadFile(&apos;filename.txt&apos;); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ifstream_MyReadFile(&apos;filename.txt&apos;);">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ifstream"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_*p=&amp;n; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_*p=&amp;n;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Pointer"/>
+        <isNullptr rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isNullptr>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_a(10); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_a(10);">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Array"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_increment(int_x)_(return_(x+1);) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_increment(int_x)_(return_(x+1);)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Functor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_length; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#int_length;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Attribute"/>
+        <isGlobal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isGlobal>
+        <isLocal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLocal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#list(int)_l; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#list(int)_l;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#List"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#map(string,int)_m; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#map(string,int)_m;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Map"/>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasCapacity>
+        <hasMaxSize rdf:datatype="http://www.w3.org/2001/XMLSchema#long">461168601842738790</hasMaxSize>
+        <hasSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasSize>
+        <isEmpty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isEmpty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#multimap(int,int)_mm; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#multimap(int,int)_mm;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multimap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#multiset(string)_ms; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#multiset(string)_ms;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multiset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myClass()(_); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myClass()(_);">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myClass(); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myClass();">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Constructor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myClass_mc; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#myClass_mc;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ofstream_MyFile(&apos;filename.txt&apos;); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ofstream_MyFile(&apos;filename.txt&apos;);">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ofstream"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#set(int)_s; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#set(int)_s;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Set"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#string_&amp;meal_=_food; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#string_&amp;meal_=_food;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Reference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#switch(a): -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#switch(a):">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SwitchStatement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#template_(class_T)_class_Stack_(); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#template_(class_T)_class_Stack_();">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ClassTemplate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#template_(typename_T)_inline_T_const&amp;_Max_(T_const&amp;_a,_T_const&amp;_b) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#template_(typename_T)_inline_T_const&amp;_Max_(T_const&amp;_a,_T_const&amp;_b)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#FunctionTemplate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#throw_404; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#throw_404;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Throw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#try(int_a=a/0) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#try(int_a=a/0)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Try"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_map(int,int)_um; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_map(int,int)_um;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_multimap(int,int)_um; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_multimap(int,int)_um;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultimap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_multiset(string)_um; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_multiset(string)_um;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultiset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_set(char)_us; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#unordered_set(char)_us;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#vector(int)::iterator_it; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#vector(int)::iterator_it;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Iterator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#vector(string)_v; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#vector(string)_v;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Vector"/>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasCapacity>
+        <hasMaxSize rdf:datatype="http://www.w3.org/2001/XMLSchema#long">461168601842738790</hasMaxSize>
+        <hasSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasSize>
+        <isEmpty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isEmpty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#while(i_lessThan_10) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#while(i_lessThan_10)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#WhileLoop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#~myClass(); -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#~myClass();">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Destructor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#hasNumberOfParameter">
+        <rdfs:comment>How many parameters does a function has?</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Container"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Functor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Iterator"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ArithmeticOperator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ComparisionOperator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#LogicalOperator"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Array"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Deque"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ForwardList"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#List"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Vector"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#AssociativeContainer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#SequenceContainer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedContainer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Catch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Throw"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Try"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Class"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Inheritance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Object"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Constructor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Destructor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#OrdinaryMethod"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ExceptionTypeName"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#ReturnTypeName"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#StorageTypeName"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#VariableTypeName"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Fstream"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ifstream"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Ofstream"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Map"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multimap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Multiset"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#Set"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultimap"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedMultiset"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/xiaoyong/ontologies/2020/3/C++ProgrammingLanguage#UnorderedSet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
